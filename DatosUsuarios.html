@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <h2>Rellena tu CV</h2>
+    </head>
+
+    <body>
+        <form>
+            <label for="nombre">Nombre </label><br>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="apellido">Apellidos </label><br>
+            <input type="text" name="apellido" id="apellido">
+            <br>
+            <label for="contraseña">Contraseña: </label><br>
+            <input type="password" id="contraseña" name="contraseña">
+            <br>
+            <label for="Ccontraseña">Confirme su Contraseña: </label><br>
+            <input type="password" id="Ccontraseña" name="Ccontraseña">
+            <br>
+            <label for="tipo">Identificacion </label><br>
+            <select id="tipo" name="tipo">
+                <option value="cedula">CC</option>
+                <option value="tarjeta de identidad ">TI</option>
+                <option value="pasaporte extranjero">PE</option>
+            </select>
+            <input type="number" name="amount" id="amount">
+            <br>
+
+            <span>Sexo</span>
+            <br>
+            <input type="radio" id="yes" name="sexo" value="yes">
+            <label for="yes">Hombre</label><br>
+            <input type="radio" id="no" name="sexo" value="no">
+            <label for="no">Mujer</label>
+            <br>
+
+            <p>Incluir mi foto <br> <input type="file" name="Examinar..."></p>
+            
+            <input id="Estudiante" name="topping" type="checkbox" value="Estudiante">
+            <label for="Estudiante">Estudiante</label>  
+        </form>
+
+         <!--aqui empieza la otra parte del forms -->
+
+        <form>
+            <p>Datos Personales<br>
+            <label for="lugar">Departamento</label><br>
+            <select id="lugar" name="lugar">
+                <option value="opcion 1">opcion 1</option>
+                <option value="opcion 2">opcion 2</option>
+                <option value="opcion 3">opcion 3</option>
+                <option value="opcion 4">opcion 4</option>
+                <option value="opcion 5">opcion 5</option>
+            </select>
+            </p>
+
+            <p>Fecha de nacimiento</p>
+            <p><input type="number" name="dia" id="dia" max="31" min="1"> <em>de</em>
+                <select id="mes" name="mes">
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                </select>  
+                <em>del</em>
+                <input type="number" name="año" id="año" max="1960" min="2023">
+            </p>
+
+            <label for="temas">Temas de interes: </label>
+            <br>
+            <textarea id="temas" name="temas" rows="5" cols="30">this is sparta</textarea>
+        </form>
+        <button>Guardar cambios</button>
+        <button>Cancelar</button>
+        <br>
+    </body>
+    <br>
+    <footer>
+        <a href="Lista.html"><button>Menu Principal</button></a>
+    </footer>
+</html>
